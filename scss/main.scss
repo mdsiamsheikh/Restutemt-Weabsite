@@ -77,6 +77,61 @@ $medium-color: #7e7c7c;
   }
 }
 
+/* Global styles for all screen sizes */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Styles for large screens */
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  /* Add styles specific to large screens here */
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Styles for medium screens */
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  /* Add styles specific to medium screens here */
+  .nav-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 22px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+
+/* Styles for small screens */
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  .btn-bg {
+    font-size: 14px;
+    padding: 2px;
+  }
+
+  #search {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
 // Home
 #home {
   padding: 2rem;
